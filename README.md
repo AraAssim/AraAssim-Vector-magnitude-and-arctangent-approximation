@@ -18,10 +18,4 @@ The objective of this project is to design a system for approximating magnitude 
 | Module_pins            | Its is text file (.txt) that is used to define the pins (inputs and outputs) of the Integrated circuit and their spacing/offsets.                          |
 | simulink_functio_synth | It is a script that is used for synthesis, with the help of this script, the netlist is generated (logic gates and its connections)                        |
 | MMMC.tcl               | A script for generating the layout that contains information about the technology library, including information about the time constraints of the device. |
-| Simulink_function_PaR  | It is a script for automatic layout generation                                                                                                             |
-|                        |                                                                                                                                                            |
-|                        |                                                                                                                                                            |
-|                        |                                                                                                                                                            |
-|                        |                                                                                                                                                            |
-|                        |                                                                                                                                                            |
-|                        |                                                                                                                                                            |
+| Simulink_function_PaR  | It is a script for automatic layout generation                                                                                                             

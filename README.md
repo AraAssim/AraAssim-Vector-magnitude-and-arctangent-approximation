@@ -21,4 +21,26 @@ The objective of this project is to design a system for approximating magnitude 
 | simulink_functio_synth_fast | It is a script that is used for synthesis, with the help of this script, the netlist is generated (logic gates and its connections) for fast corner case,  uses simulink_functio.sdc as a constraint file (clock frequency is 10MHz and uncertainty is 5%)   | 
 | simulink_functio_synth_20   | It is a script that is used for synthesis, with the help of this script, the netlist is generated (logic gates and its connections) for typical corner case but at the clock frequency of 20MHz instead of 10MHz and uncertainty is 5%                       |
 | MMMC.tcl                    | A script for generating the layout that contains information about the technology library, including information about the time constraints of the device.                                                                                                  |
-| Simulink_function_PaR       | It is a script for automatic layout generation                                                                                                                                                                                                              
+| Simulink_function_PaR       | It is a script for automatic layout generation         
+
+
+
+To create the layout of the digital IC for this project, it is necessary to go through the following three stages:
+
+1. Creating the description of the device at the behavioral level (in Verilog HDL) and running the simulation to generate timing diagrams for the device, at this stage we may use Cadence Incisive, with the help of the top module verilog .v file (simulink_functio.v) and the testbench (simulink_functio_tb.v).
+
+2. Performing logical synthesis of the device with reference to the technological library, at the end of this stage, we obtain the netlist of the device which consists of logic gates and interconnections.
+
+3. Generating a layout from the list of logical gates and interconnects obtained at the synthesis stage.
+
+In order to build this project, you need to:
+1. Download the Source folder, it contains the files " simulink_functio.v", " simulink_functio.sdc", " simulink_functio_tb.v ", " simulink_functio_tb_final.v", " Module_pins ", " in_im.dat", "in_re.dat" , “alpha_arctangen_expected.dat”, “magnitude_expected.dat”.
+
+2. Download the Scripts folder, the scripts listed here should be available "X-FAB_typ.tcl", "X-FAB_slow.tcl", "X-FAB_fast.tcl", " simulink_functio_synth.tcl", " simulink_functio_synth_20.tcl", " simulink_functio_synth_slow.tcl, " simulink_functio_synth_fast.tcl”, " MMMC.tcl "," Simulink_function_PaR ", in scripts" X-FAB_typ.tcl "," X-FAB_slow.tcl "," X-FAB_fast.tcl "," MMMC. tcl " , please pay attention to the paths to the technology library files in accordance with their location in your system.
+
+3. (This stage is optional), you may create timing diagrams in Cadence Incisive or Xilinx for example using the Verilog code and its testbench but in this case, the device’s correct functionality has been verified so you may do it only if you want to.
+
+4. Create a file to perform logic synthesis, in this coursework (Cadence RTL complier was used) and in the software run the script " simulink_functio_synth.tcl ".
+
+5. To check timing and area reports for typical, slow and fast corners, it is required to create a folder to save the timing diagrams, then you may run the " simulink_functio_synth.tcl ", " simulink_functio_synth_slow.tcl, " simulink_functio_synth_fast.tcl” to see the reports for different corners.
+

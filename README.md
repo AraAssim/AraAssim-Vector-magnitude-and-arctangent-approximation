@@ -44,3 +44,13 @@ In order to build this project, you need to:
 
 5. To check timing and area reports for typical, slow and fast corners, it is required to create a folder to save the timing diagrams, then you may run the " simulink_functio_synth.tcl ", " simulink_functio_synth_slow.tcl, " simulink_functio_synth_fast.tcl” to see the reports for different corners.
 
+6. Next step is generating the layout, you need to check that the "simulink_functio_synth.v" file is located in the Outputs folder, that file is created automatically after logical synthesis. And after that a folder must be created from which the script will be launched for layout generation, in this work we used Cadence Encounter software and the file was named “Encounter”.
+
+7. Run the script “Simulink_function_PaR.tcl”, this is the main script that contains all steps of creating the layout.
+
+8. After running the script “Simulink_function_PaR.tcl” , some files will be generated and will be located in the Outputs, these files include "simulink_functio.def", "top_netlist.v" (for simulation), "physical_netlist.v” (to be import into the software, in this project, Cadence Virtuoso was used and at this stage DRC and LVS verification were performed), "simulink_functio_MAX.sdf", " simulink_functio _MIN.sdf" (can be used for simulation, taking into account the influence of the effects obtained during layout creation).
+
+It is critical to note that after generating the layout, different timing reports are created, you may read them in the “timing reports” file, the timing reports are especially important for post-Route and signoff stages for both setup and hold, in addition to that three other verifications are done: geometry, DRC and connectivity.
+
+9. After synthesis and layout generation stages, functional verification should be carried out to make sure that the device works properly. To check the functional correctness of the Verilog module after the topology generation stage, we use a different test bench file, which is named “simulink_functio_tb_final.v” which is located in Source folder. 
+

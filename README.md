@@ -14,3 +14,14 @@ The objective of this project is to design a system for approximating magnitude 
 | X-FAB_typ.tcl              | It is a script that shows the paths to the technological library of cells for typical corner case                                                                                                                                          |
 | X-FAB_fast.tcl             | It is a script that shows the paths to the technological library of cells for fast corner case                                                                                                                                             |
 | X-FAB_slow.tcl             | It is a script that shows the paths to the technological library of cells for slow corner case                                                                                                                                             |
+| simulink_functio.sdc   | It is the timing constraint file that is used for both synthesis and layout generation                                                                     |
+| Module_pins            | Its is text file (.txt) that is used to define the pins (inputs and outputs) of the Integrated circuit and their spacing/offsets.                          |
+| simulink_functio_synth | It is a script that is used for synthesis, with the help of this script, the netlist is generated (logic gates and its connections)                        |
+| MMMC.tcl               | A script for generating the layout that contains information about the technology library, including information about the time constraints of the device. |
+| Simulink_function_PaR  | It is a script for automatic layout generation                                                                                                             |
+|                        |                                                                                                                                                            |
+|                        |                                                                                                                                                            |
+|                        |                                                                                                                                                            |
+|                        |                                                                                                                                                            |
+|                        |                                                                                                                                                            |
+|                        |                                                                                                                                                            |

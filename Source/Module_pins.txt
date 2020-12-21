@@ -1,0 +1,87 @@
+Version: 2
+
+Offset: 50
+Pin: clk W MET4
+Spacing: 20
+Pin: clk_enable W MET4
+Spacing: 20
+Pin: reset_x W MET4
+Spacing: 100
+
+Pin: magnitude[0] W MET4
+Pin: magnitude[1] W MET4
+Pin: magnitude[2] W MET4
+Pin: magnitude[3] W MET4
+Pin: magnitude[4] W MET4
+Pin: magnitude[5] W MET4
+Pin: magnitude[6] W MET4
+Pin: magnitude[7] W MET4
+Pin: magnitude[8] W MET4
+Pin: magnitude[9] W MET4
+Pin: magnitude[10] W MET4
+Pin: magnitude[11] W MET4
+Pin: magnitude[12] W MET4
+Pin: magnitude[13] W MET4
+Pin: magnitude[14] W MET4
+Pin: magnitude[15] W MET4
+
+
+Offset: 50
+
+Pin: alpha_arctangen[0] N MET4
+Spacing: 100
+
+Pin: alpha_arctangen[1] N MET4
+Pin: alpha_arctangen[2] N MET4
+Pin: alpha_arctangen[3] N MET4
+Pin: alpha_arctangen[4] N MET4
+Pin: alpha_arctangen[5] N MET4
+Pin: alpha_arctangen[6] N MET4
+Pin: alpha_arctangen[7] N MET4
+
+Offset: 50
+Pin: in_re[0] E MET4
+Spacing: 100
+
+
+Pin: in_re[1] E MET4
+Pin: in_re[2] E MET4
+Pin: in_re[3] E MET4
+Pin: in_re[4] E MET4
+Pin: in_re[5] E MET4
+Pin: in_re[6] E MET4
+Pin: in_re[7] E MET4
+Pin: in_re[8] E MET4
+Pin: in_re[9] E MET4
+Pin: in_re[10] E MET4
+Pin: in_re[11] E MET4
+Pin: in_re[12] E MET4
+Pin: in_re[13] E MET4
+Pin: in_re[14] E MET4
+Pin: in_re[15] E MET4
+
+
+Offset: 50
+
+Pin: in_im[0] S MET4
+Spacing: 100
+
+
+Pin: in_im[1] S MET4
+Pin: in_im[2] S MET4
+Pin: in_im[3] S MET4
+Pin: in_im[4] S MET4
+Pin: in_im[5] S MET4
+Pin: in_im[6] S MET4
+Pin: in_im[7] S MET4
+Pin: in_im[8] S MET4
+Pin: in_im[9] S MET4
+Pin: in_im[10] S MET4
+Pin: in_im[11] S MET4
+Pin: in_im[12] S MET4
+Pin: in_im[13] S MET4
+Pin: in_im[14] S MET4
+Pin: in_im[15] S MET4
+
+
+

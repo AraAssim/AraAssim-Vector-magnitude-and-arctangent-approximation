@@ -1,7 +1,6 @@
 # AraAssim-Vector-magnitude-and-arctangent-approximation
 
 
-link: 
 https://zenodo.org/record/5524772
 DOI:  
 10.5281/zenodo.5524772
